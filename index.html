@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <title>Mapa interactivo de Cantabria</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>MAPA DE CANTABRIA</h1>
+
+  <div class="selector-mapas">
+    <button class="tab active" data-mapa="niños">Nº de niños</button>
+    <button class="tab" data-mapa="centros">Tipos de centros</button>
+    <button class="tab" data-mapa="mancomunidades">Mancomunidades</button>
+  </div>
+
+  <div class="mapa-wrapper">
+    <object id="svgMap" type="image/svg+xml" data="cantabria.svg"></object>
+    <div id="popup" class="popup hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

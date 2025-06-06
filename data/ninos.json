@@ -1,0 +1,284 @@
+{
+  "Hazas de Cesto": [
+    {
+      "tipo": "AYTO HAZAS DE CESTO",
+      "niños": 7
+    }
+  ],
+  "Ribamontán al Monte": [
+    {
+      "tipo": "AYTO HOZ DE ANERO",
+      "niños": 5
+    },
+    {
+      "tipo": "CEIP TRASMIERA",
+      "niños": 35
+    }
+  ],
+  "Reinosa": [
+    {
+      "tipo": "AYTO LUDOTECA REINOSA",
+      "niños": 16
+    },
+    {
+      "tipo": "AYTO LUDOTECA REINOSA SS",
+      "niños": 5
+    },
+    {
+      "tipo": "CD LA GÜARIZA REINOSA",
+      "niños": 17
+    }
+  ],
+  "Colindres": [
+    {
+      "tipo": "CAIA COLINDRES",
+      "niños": 19
+    },
+    {
+      "tipo": "UF COLINDRES FCA",
+      "niños": 8
+    }
+  ],
+  "Laredo": [
+    {
+      "tipo": "CAIA LAREDO",
+      "niños": 28
+    }
+  ],
+  "Camargo": [
+    {
+      "tipo": "CASA JOVEN CAMARGO",
+      "niños": 8
+    },
+    {
+      "tipo": "CD CAMARGO",
+      "niños": 14
+    },
+    {
+      "tipo": "CEIP GLORIA FUERTES",
+      "niños": 56
+    },
+    {
+      "tipo": "CEIP MATILDE DE LA TORRE",
+      "niños": 86
+    },
+    {
+      "tipo": "IES RIA DEL CARMEN",
+      "niños": 113
+    },
+    {
+      "tipo": "UF MALIAÑO FCA",
+      "niños": 12
+    }
+  ],
+  "Santa María de Cayón": [
+    {
+      "tipo": "CASA JOVEN CAYON",
+      "niños": 24
+    },
+    {
+      "tipo": "CEIP GERARDO DIEGO",
+      "niños": 329
+    }
+  ],
+  "Santander": [
+    {
+      "tipo": "CC ÁNGELES CUSTODIOS",
+      "niños": 112
+    },
+    {
+      "tipo": "CC BELLAVISTA",
+      "niños": 54
+    },
+    {
+      "tipo": "CC MIGUEL BRAVO",
+      "niños": 189
+    },
+    {
+      "tipo": "CC SAN MARTÍN SANTANDER",
+      "niños": 167
+    },
+    {
+      "tipo": "CC SAN ROQUE - LOS PINARES",
+      "niños": 28
+    },
+    {
+      "tipo": "CD CAROLINA LÓPEZ DÓRIGA",
+      "niños": 26
+    },
+    {
+      "tipo": "CD NUEVO FUTURO",
+      "niños": 19
+    },
+    {
+      "tipo": "HOGAR ALISAL NUEVO FUTURO",
+      "niños": 5
+    },
+    {
+      "tipo": "UF PÉREZ FCA",
+      "niños": 8
+    },
+    {
+      "tipo": "UF VARGAS FCA",
+      "niños": 10
+    },
+    {
+      "tipo": "UTS CASTILLA-HERMIDA",
+      "niños": 24
+    },
+    {
+      "tipo": "UTS Gota de leche",
+      "niños": 14
+    },
+    {
+      "tipo": "UTS Gota de leche 2",
+      "niños": 17
+    }
+  ],
+  "Torrelavega": [
+    {
+      "tipo": "CC EL SALVADOR",
+      "niños": 215
+    }
+  ],
+  "Santillana del Mar": [
+    {
+      "tipo": "CD ALTAMIRA LOS VALLES",
+      "niños": 19
+    }
+  ],
+  "Castro Urdiales": [
+    {
+      "tipo": "CD CASTRO URDIALES",
+      "niños": 26
+    }
+  ],
+  "Pielagos": [
+    {
+      "tipo": "CD LA ESTELA DE ZURITA",
+      "niños": 27
+    }
+  ],
+  "Los Corrales de Buelna": [
+    {
+      "tipo": "CD LOS CORRALES DE BUELNA",
+      "niños": 9
+    },
+    {
+      "tipo": "IES ESTELAS DE CANTABRIA",
+      "niños": 32
+    },
+    {
+      "tipo": "US LOS CORRALES DE BUELNA FCA",
+      "niños": 7
+    }
+  ],
+  "Santoña": [
+    {
+      "tipo": "CD SANTOÑA",
+      "niños": 14
+    }
+  ],
+  "Bareyo": [
+    {
+      "tipo": "CEIP BENEDICTO RUIZ AJO",
+      "niños": 36
+    }
+  ],
+  "Val de San Vicente": [
+    {
+      "tipo": "CEIP FUENTE SALIN",
+      "niños": 93
+    }
+  ],
+  "Soba": [
+    {
+      "tipo": "CEIP JERÓNIMO PÉREZ SÁINZ DE LA MAZA",
+      "niños": 18
+    }
+  ],
+  "Marina de Cudeyo": [
+    {
+      "tipo": "CEIP MARINA DE CUDEYO",
+      "niños": 33
+    },
+    {
+      "tipo": "US PEDROSA FCA",
+      "niños": 9
+    }
+  ],
+  "Liendo": [
+    {
+      "tipo": "CEIP PEREGRINO AVENDAÑO",
+      "niños": 29
+    }
+  ],
+  "Polanco": [
+    {
+      "tipo": "CEIP PÉREZ GALDÓS",
+      "niños": 144
+    }
+  ],
+  "Alfoz de Lloredo": [
+    {
+      "tipo": "CEIP QUIRÓS",
+      "niños": 23
+    }
+  ],
+  "Cabezon de la Sal": [
+    {
+      "tipo": "CEIP RAMÓN LAZA",
+      "niños": 229
+    }
+  ],
+  "Astillero": [
+    {
+      "tipo": "CEIP RAMON Y CAJAL",
+      "niños": 64
+    },
+    {
+      "tipo": "HOGAR ASTILLERO NUEVO FUTURO",
+      "niños": 9
+    }
+  ],
+  "Campoo de Suso": [
+    {
+      "tipo": "CEIP RODRIGUEZ DE CELIS",
+      "niños": 13
+    }
+  ],
+  "Arnuero": [
+    {
+      "tipo": "CEIP SAN PEDRO APOSTOL",
+      "niños": 75
+    }
+  ],
+  "Valdeolea": [
+    {
+      "tipo": "CEIP VALDEOLEA",
+      "niños": 9
+    }
+  ],
+  "Valderredible": [
+    {
+      "tipo": "CEIP VIRGEN DE LA VELILLA",
+      "niños": 14
+    }
+  ],
+  "Potes": [
+    {
+      "tipo": "CRA Liebana Peñarrubia",
+      "niños": 9
+    }
+  ],
+  "Bezana": [
+    {
+      "tipo": "UF SOTO I FCA",
+      "niños": 8
+    },
+    {
+      "tipo": "UF SOTO II FCA",
+      "niños": 6
+    }
+  ]
+}
