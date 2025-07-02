@@ -265,10 +265,16 @@
       "niños": 14
     }
   ],
-  "Potes": [
+  "Peñarrubia": [
     {
-      "tipo": "CRA Liebana Peñarrubia",
-      "niños": 9
+      "tipo": "CRA Peñarrubia",
+      "niños": 5
+    }
+  ],
+  "Camaleño": [
+    {
+      "tipo": "CRA Liébana",
+      "niños": 4
     }
   ],
   "Bezana": [
