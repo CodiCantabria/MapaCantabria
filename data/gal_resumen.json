@@ -1,0 +1,85 @@
+{
+  "Grupo de Acción Local Liébana": {
+    "CENTROS TOTALES": 1,
+    "Nº NIÑOS": 9,
+    "AYUNTAMIENTOS": 0,
+    "SERVICIOS SOCIALES": 0,
+    "CENTROS EDUCATIVOS": 1
+  },
+  "Saja-Nansa Asociación de Desarrollo Rural": {
+    "CENTROS TOTALES": 3,
+    "Nº NIÑOS": 345,
+    "AYUNTAMIENTOS": 0,
+    "SERVICIOS SOCIALES": 0,
+    "CENTROS EDUCATIVOS": 3
+  },
+  "Asociación Desarrollo Territorial Campoo - Los Valles": {
+    "CENTROS TOTALES": 6,
+    "Nº NIÑOS": 74,
+    "AYUNTAMIENTOS": 0,
+    "SERVICIOS SOCIALES": 3,
+    "CENTROS EDUCATIVOS": 3
+  },
+  "Grupo de Acción Local Asón - Agüera - Trasmiera": {
+    "CENTROS TOTALES": 5,
+    "Nº NIÑOS": 94,
+    "AYUNTAMIENTOS": 2,
+    "SERVICIOS SOCIALES": 0,
+    "CENTROS EDUCATIVOS": 3
+  },
+  "Valles Pasiegos Grupo de Acción Local": {
+    "CENTROS TOTALES": 2,
+    "Nº NIÑOS": 353,
+    "AYUNTAMIENTOS": 0,
+    "SERVICIOS SOCIALES": 0,
+    "CENTROS EDUCATIVOS": 1
+  },
+    "Santander": {
+      "Nº NIÑOS": 679,
+      "CENTROS TOTALES": 11,
+      "AYUNTAMIENTOS": 0,
+      "SERVICIOS SOCIALES": 7,
+      "CENTROS EDUCATIVOS": 5,
+      "CASA JOVEN": 0
+    },
+    "Torrelavega": {
+      "Nº NIÑOS": 215,
+      "CENTROS TOTALES": 1,
+      "AYUNTAMIENTOS": 0,
+      "SERVICIOS SOCIALES": 0,
+      "CENTROS EDUCATIVOS": 1,
+      "CASA JOVEN": 0
+    },
+    "Castro Urdiales": {
+      "Nº NIÑOS": 26,
+      "CENTROS TOTALES": 1,
+      "AYUNTAMIENTOS": 0,
+      "SERVICIOS SOCIALES": 1,
+      "CENTROS EDUCATIVOS": 0,
+      "CASA JOVEN": 0
+    },
+    "Piélagos": {
+      "Nº NIÑOS": 27,
+      "CENTROS TOTALES": 1,
+      "AYUNTAMIENTOS": 0,
+      "SERVICIOS SOCIALES": 1,
+      "CENTROS EDUCATIVOS": 0,
+      "CASA JOVEN": 0
+    },
+    "Camargo": {
+      "Nº NIÑOS": 289,
+      "CENTROS TOTALES": 6,
+      "AYUNTAMIENTOS": 0,
+      "SERVICIOS SOCIALES": 2,
+      "CENTROS EDUCATIVOS": 3,
+      "CASA JOVEN": 1
+    },
+    "Otros Municipios": {
+    "Nº NIÑOS": 385,
+    "CENTROS TOTALES": 10,
+    "AYUNTAMIENTOS": 0,
+    "SERVICIOS SOCIALES": 0,
+    "CENTROS EDUCATIVOS": 0,
+    "CASA JOVEN": 0
+  }
+}
