@@ -1,67 +1,97 @@
 {
   "Hazas de Cesto": {
+    "AYUNTAMIENTOS": []
   },
   "Ribamontán al Monte": {
+    "AYUNTAMIENTOS": []
   },
   "Reinosa": {
+    "AYUNTAMIENTOS": [],
+    "SERVICIOS SOCIALES": [" Ludoteca", " Ludoteca SS", " CD La Güariza"]
   },
   "Colindres": {
+    "SERVICIOS SOCIALES": ["CAIA Colindres", " Hogar Colindres FCA"]
   },
   "Laredo": {
+    "SERVICIOS SOCIALES": [" CAIA Laredo"]
   },
   "Camargo": {
+    "CENTROS EDUCATIVOS": [" CEIP Matilde de la Torre", " CEIP Gloria Fuertes", " IES Ria del Carmen"],
+    "SERVICIOS SOCIALES": [" CD Camargo", " UF MALIAÑO FCA"],
+    "CASA JOVEN": [" Casa Joven Camargo"]
   },
   "Santa María de Cayón": {
+    "CENTROS EDUCATIVOS": [" CEIP Gerardo Diego"],
+    "CASA JOVEN": [" Casa Joven Cayón"]
   },
   "Santander": {
+    "CENTROS EDUCATIVOS": ["CC Ángeles Custodios", " CC Bellavista", " CC Miguel Bravo", " CC San martín", " CC San Roque de los Pinares"],
+    "SERVICIOS SOCIALES": [" CD Carolina López Dóriga", " CD Nuevo Futuro", " UTS CASTILLA-HERMIDA", " UTS GOTA DE LECHE", " HOGAR ALISAL N.F", " UF PÉREZ FCA", " UF VARGAS FCA"]
   },
   "Torrelavega": {
+    "CENTROS EDUCATIVOS": [" CC El Salvador"]
   },
   "Santillana del Mar": {
+    "SERVICIOS SOCIALES": ["CD Altamira de los Valles"]
   },
   "Castro Urdiales": {
+    "SERVICIOS SOCIALES": [" CD Castro Urdiales"]
   },
   "Pielagos": {
+    "SERVICIOS SOCIALES": ["CD La Estela de Zurtia"]
   },
   "Los Corrales de Buelna": {
+    "CENTROS EDUCATIVOS": ["IES Las Estelas de Cantabria"],
+    "SERVICIOS SOCIALES": ["CD Los Corrales de Buelna", " US Los Corrales de Buelna FCA"]
   },
   "Santoña": {
+    "SERVICIOS SOCIALES": ["CD Santoña"]
   },
   "Bareyo": {
+    "CENTROS EDUCATIVOS": ["CEIP Benedicto Ruiz Ajo"]
   },
   "Val de San Vicente": {
-    "Colegio": 1
+    "CENTROS EDUCATIVOS": ["CEIP Fuente Salín"]
   },
   "Soba": {
+    "CENTROS EDUCATIVOS": ["CEIP Jerónimo Sainz de la Maza"]
   },
   "Marina de Cudeyo": {
+    "CENTROS EDUCATIVOS": [" CEIP Marina de Cudeyo"],
+    "SERVICIOS SOCIALES": [" US Pedrosa FCA"]
   },
   "Liendo": {
-    "Colegio": 1
+    "CENTROS EDUCATIVOS": ["CEIP Pregrino Avendaño"]
   },
   "Polanco": {
+    "CENTROS EDUCATIVOS": ["CEIP Pérez Galdos"]
   },
   "Alfoz de Lloredo": {
+    "CENTROS EDUCATIVOS": ["CEIP Quirós"]
   },
   "Cabezon de la Sal": {
+    "CENTROS EDUCATIVOS": ["CEIP Ramón Laza"]
   },
   "Astillero": {
+    "CENTROS EDUCATIVOS": ["CEIP Ramón y Cajal"],
+    "SERVICIOS SOCIALES": ["HOGAR ASTILLERO N.F"]
   },
   "Campoo de Suso": {
+    "CENTROS EDUCATIVOS": ["CEIP Rodriguez de Celis"]
   },
   "Arnuero": {
-    
+    "CENTROS EDUCATIVOS": ["CEIP San Pedro Apostol"]
   },
   "Valdeolea": {
-    
+    "CENTROS EDUCATIVOS": ["CEIP Valdeolea"]
   },
   "Valderredible": {
-    
+    "CENTROS EDUCATIVOS": ["CEIP Virgen de la Velilla"]
   },
   "Potes": {
-    
+    "CENTROS EDUCATIVOS": ["CRA Liébana Peñarrubia"]
   },
   "Bezana": {
-    
+    "SERVICIOS SOCIALES": ["UF Soto I", "UF Soto II"]
   }
 }
