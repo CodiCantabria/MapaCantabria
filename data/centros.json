@@ -88,8 +88,11 @@
   "Valderredible": {
     "CENTROS EDUCATIVOS": ["CEIP Virgen de la Velilla"]
   },
-  "Potes": {
-    "CENTROS EDUCATIVOS": ["CRA Liébana Peñarrubia"]
+  "Camaleño": {
+    "CENTROS EDUCATIVOS": ["CRA Liébana"]
+  },
+  "Peñarrubia": {
+    "CENTROS EDUCATIVOS": ["CRA Peñarrubia"]
   },
   "Bezana": {
     "SERVICIOS SOCIALES": ["UF Soto I", "UF Soto II"]
