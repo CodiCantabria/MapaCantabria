@@ -1,17 +1,135 @@
 let currentMap = "niños";
 let dataCache = {};
 
+const popup = document.getElementById("popup");
+const svgMap = document.getElementById("svgMap");
+
+const municipiosOtros = ["Santander", "Torrelavega", "Castro Urdiales", "Piélagos", "Camargo"];
+
+const galPorMunicipio = {
+  "Potes": "Grupo de Acción Local Liébana",
+  "Tresviso": "Grupo de Acción Local Liébana",
+  "Cabezon de Liebana": "Grupo de Acción Local Liébana",
+  "Cillorigo de Liebana": "Grupo de Acción Local Liébana",
+  "Pesaguero": "Grupo de Acción Local Liébana",
+  "Vega de Liebana": "Grupo de Acción Local Liébana",
+  "Camaleño": "Grupo de Acción Local Liébana",
+
+  "Mancomunidad de Campoo-Cabuerniga": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Cabuerniga": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Peñarrubia": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Comillas": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Ruiloba": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Udias": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Cabezon de la Sal": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Mazcuerras": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Alfoz de Lloredo": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Tudanca": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Herrerias": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Los Tojos": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Ruente": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Lamason": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Rionansa": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Polaciones": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Herrerias": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Valdaliga": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Val de San Vicente": "Saja-Nansa Asociación de Desarrollo Rural",
+  "San Vicente": "Saja-Nansa Asociación de Desarrollo Rural",
+
+  "Cieza": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Campoo de Enmedio": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Campoo de Yuso": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Campoo de Suso": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Reinosa": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Molledo": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Molledo1": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Barcena de Pie de Concha": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Arenas de Iguña": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Anievas": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Pesquera": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Santiurde de Reinosa": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Valdeolea": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Valdeprado del Rio": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Valderredible": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "San Miguel de Aguayo": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Rozas de Valdearroyo": "Asociación Desarrollo Territorial Campoo - Los Valles",
+
+  "Vega de Pas": "Valles Pasiegos Grupo de Acción Local",
+  "Puente Viesgo": "Valles Pasiegos Grupo de Acción Local",
+  "Miera": "Valles Pasiegos Grupo de Acción Local",
+  "Lierganes": "Valles Pasiegos Grupo de Acción Local",
+  "Penagos": "Valles Pasiegos Grupo de Acción Local",
+  "San Pedro del Romeral": "Valles Pasiegos Grupo de Acción Local",
+  "San Roque de Riomiera": "Valles Pasiegos Grupo de Acción Local",
+  "Selaya": "Valles Pasiegos Grupo de Acción Local",
+  "Villacarriedo": "Valles Pasiegos Grupo de Acción Local",
+  "Saro": "Valles Pasiegos Grupo de Acción Local",
+  "Villafufre": "Valles Pasiegos Grupo de Acción Local",
+  "Santa María de Cayón": "Valles Pasiegos Grupo de Acción Local",
+  "Castañeda": "Valles Pasiegos Grupo de Acción Local",
+  "Corvera de Toranzo": "Valles Pasiegos Grupo de Acción Local",
+  "Santiurde de Toranzo": "Valles Pasiegos Grupo de Acción Local",
+  "Luena": "Valles Pasiegos Grupo de Acción Local",
+
+  "Ramales de la Victoria": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Ribamontan al Monte": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Entrambasaguas": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Ruesga": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Riotuerto": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Rasines": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Valle de Villaverde": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Limpias": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Soba": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Ampuero": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Guriezo": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Liendo": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Hazas de Cesto": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Barcena de Cicero": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Arredondo": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Solorzano": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+  "Voto": "Grupo de Acción Local Asón - Agüera - Trasmiera",
+
+  "Reocín": "Otros Municipios",
+  "Cartes": "Otros Municipios",
+  "Santillana del Mar":"Otros Municipios",
+  "San Felices de Buelna": "Otros Municipios",
+  "Los Corrales de Buelna": "Otros Municipios",
+  "Miengo": "Otros Municipios",
+  "Suances": "Otros Municipios",
+  "Polanco": "Otros Municipios",
+  "Bezana": "Otros Municipios",
+  "Villaescusa": "Otros Municipios",
+  "Astillero": "Otros Municipios",
+  "Medio Cudeyo": "Otros Municipios",
+  "Marina de Cudeyo": "Otros Municipios",
+  "Ribamontán al Mar": "Otros Municipios",
+  "Bareyo": "Otros Municipios",
+  "Meruelo": "Otros Municipios",
+  "Arnuero": "Otros Municipios",
+  "Noja": "Otros Municipios",
+  "Escalante": "Otros Municipios",
+  "Argoños": "Otros Municipios",
+  "Santoña": "Otros Municipios",
+  "Laredo": "Otros Municipios",
+  "Colindres": "Otros Municipios",
+};
+
+
 document.querySelectorAll(".tab").forEach(btn => {
   btn.addEventListener("click", () => {
     document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
+
     currentMap = btn.dataset.mapa;
-    document.getElementById("popup").classList.add("hidden");
+    popup.classList.add("hidden");
+
+    if (currentMap === "mancomunidades") {
+      svgMap.setAttribute("data", "mancomunidades.svg");
+    } else {
+      svgMap.setAttribute("data", "cantabria.svg");
+    }
   });
 });
-
-const popup = document.getElementById("popup");
-const svgMap = document.getElementById("svgMap");
 
 svgMap.addEventListener("load", () => {
   const svgDoc = svgMap.contentDocument;
@@ -20,40 +138,76 @@ svgMap.addEventListener("load", () => {
     return;
   }
 
-  const municipios = svgDoc.querySelectorAll("path");
-  municipios.forEach(path => {
+  const zonas = svgDoc.querySelectorAll("path");
+  zonas.forEach(path => {
     if (!path.id) return;
 
     path.style.cursor = "pointer";
     path.addEventListener("click", () => {
-      const municipioBox = path.getBoundingClientRect();
-      const mapBox = svgMap.getBoundingClientRect();
+      const fill = path.getAttribute("fill") || path.style.fill;
+      if (!fill || fill === "none" || fill === "#ffffff" || fill === "#fff") return;
 
-      const x = municipioBox.left + municipioBox.width / 2 - mapBox.left;
-      const y = municipioBox.top + municipioBox.height / 2 - mapBox.top;
+      const nombre = path.id;
 
-      fetchDataAndShowPopup(path.id, x, y);
+    if (currentMap === "mancomunidades") {
+  if (municipiosOtros.includes(nombre)) {
+    fetchDataAndShowPopup(nombre, nombre);
+  } else {
+    const gal = galPorMunicipio[nombre];
+    if (!gal) {
+      popup.classList.add("hidden");
+      return;
+    }
+    fetchDataAndShowPopup(gal, gal);
+  }
+} else {
+  fetchDataAndShowPopup(nombre, nombre);
+}
+
     });
   });
 });
 
-function fetchDataAndShowPopup(name, x, y) {
-  const jsonFile = currentMap === 'niños' ? 'ninos' : currentMap;
+function fetchDataAndShowPopup(lookupKey, displayName) {
+  const jsonFile = currentMap === 'niños' ? 'ninos' :
+                   currentMap === 'mancomunidades' ? 'gal_resumen' :
+                   currentMap;
 
   if (dataCache[currentMap]) {
-    showPopup(dataCache[currentMap][name], name, x, y);
+    const data = dataCache[currentMap];
+    let info = data[lookupKey];
+
+    if (!info && (currentMap === 'niños' || currentMap === 'centros')) {
+      const gal = galPorMunicipio[lookupKey];
+      if (gal && data[gal]) {
+        info = data[gal];
+        displayName = `${lookupKey} (en ${gal})`;
+      }
+    }
+
+    showPopup(info, displayName);
   } else {
     fetch(`data/${jsonFile}.json`)
       .then(res => res.json())
       .then(data => {
         dataCache[currentMap] = data;
-        showPopup(data[name], name, x, y);
+        let info = data[lookupKey];
+
+        if (!info && (currentMap === 'niños' || currentMap === 'centros')) {
+          const gal = galPorMunicipio[lookupKey];
+          if (gal && data[gal]) {
+            info = data[gal];
+            displayName = `${lookupKey} (en ${gal})`;
+          }
+        }
+
+        showPopup(info, displayName);
       })
       .catch(err => console.error("❌ Error al cargar JSON:", err));
   }
 }
 
-function showPopup(info, name, x, y) {
+function showPopup(info, name) {
   if (!info) {
     popup.classList.add("hidden");
     return;
@@ -69,29 +223,8 @@ function showPopup(info, name, x, y) {
   }
 
   popup.innerHTML = html;
-
-  const svgRect = svgMap.getBoundingClientRect();
-  const popupWidth = 250;
-  const popupHeight = popup.offsetHeight || 100;
-
-  const leftSpace = x - popupWidth - 20;
-  const rightSpace = svgRect.width - (x + popupWidth + 20);
-
-  let posX, posY;
-
-  if (rightSpace > 0) {
-    posX = x + 20;
-  } else if (leftSpace > 0) {
-    posX = x - popupWidth - 20;
-  } else {
-    posX = x - popupWidth / 2;
-  }
-
-  posX = Math.max(10, Math.min(svgRect.width - popupWidth - 10, posX));
-  posY = y - popupHeight / 2;
-  posY = Math.max(10, Math.min(svgRect.height - popupHeight - 10, posY));
-
-  popup.style.left = `${posX}px`;
-  popup.style.top = `${posY}px`;
+  popup.style.left = "100px";
+  popup.style.top = "10px";
   popup.classList.remove("hidden");
 }
+  
