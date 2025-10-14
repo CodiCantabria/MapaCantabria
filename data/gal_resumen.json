@@ -1,86 +1,71 @@
 {
-  "Grupo de Acción Local Liébana": {
-    "CENTROS TOTALES": 2,
-    "Nº NIÑOS": 9,
-    "AYUNTAMIENTOS": 0,
-    "SERVICIOS SOCIALES": 0,
-    "CENTROS EDUCATIVOS": 2
-  },
-  "Saja-Nansa Asociación de Desarrollo Rural": {
-    "CENTROS TOTALES": 3,
-    "Nº NIÑOS": 345,
-    "AYUNTAMIENTOS": 0,
-    "SERVICIOS SOCIALES": 0,
-    "CENTROS EDUCATIVOS": 3
-  },
   "Asociación Desarrollo Territorial Campoo - Los Valles": {
-    "CENTROS TOTALES": 6,
-    "Nº NIÑOS": 74,
-    "AYUNTAMIENTOS": 0,
-    "SERVICIOS SOCIALES": 3,
+    "CENTROS TOTALES": 8,
+    "Nº NIÑOS": 144, 
+    "AYUNTAMIENTOS": 4,
+    "SERVICIOS SOCIALES": 1,
     "CENTROS EDUCATIVOS": 3
+  },
+  "Camargo": {
+    "CENTROS TOTALES": 6,
+    "Nº NIÑOS": 599,
+    "AYUNTAMIENTO": 1,
+    "SERVICIOS SOCIALES": 2,
+    "CENTROS EDUCATIVOS": 3
+  },
+  "Castro Urdiales": {
+    "CENTROS TOTALES": 1,
+    "Nº NIÑOS": 26,
+    "SERVICIOS SOCIALES": 1
   },
   "Grupo de Acción Local Asón - Agüera - Trasmiera": {
-    "CENTROS TOTALES": 5,
-    "Nº NIÑOS": 94,
+    "CENTROS TOTALES": 11,
+    "Nº NIÑOS": 323,
+    "AYUNTAMIENTOS": 7,
+    "ASOCIACIONES": 1,
+    "CENTROS EDUCATIVOS": 3
+  },
+  "Grupo de Acción Local Liébana": {
+    "CENTROS TOTALES": 3,
+    "Nº NIÑOS": 23,
+    "SERVICIOS SOCIALES": 1,
+    "CENTROS EDUCATIVOS": 2
+  },
+  "Otros Municipios": {
+    "CENTROS TOTALES": 21,
+    "Nº NIÑOS": 1050,
     "AYUNTAMIENTOS": 2,
-    "SERVICIOS SOCIALES": 0,
+    "SERVICIOS SOCIALES": 11,
+    "CENTROS EDUCATIVOS": 8
+  },
+  "Pielagos": {
+    "CENTROS TOTALES": 1,
+    "Nº NIÑOS": 27,
+    "SERVICIOS SOCIALES": 1 
+  },
+  "Saja-Nansa Asociación de Desarrollo Rural": {
+    "CENTROS TOTALES": 4,
+    "Nº NIÑOS": 551,
+    "AYUNTAMIENTOS": 3,
+    "CENTROS EDUCATIVOS":1 
+  },
+  "Santander": {
+    "CENTROS TOTALES": 14,
+    "Nº NIÑOS": 905,
+    "AYUNTAMIENTO": 1,
+    "SERVICIOS SOCIALES": 8,
+    "CENTROS EDUCATIVOS": 5
+  },
+  "Torrelavega": {
+    "CENTROS TOTALES": 3,
+    "Nº NIÑOS": 356,
     "CENTROS EDUCATIVOS": 3
   },
   "Valles Pasiegos Grupo de Acción Local": {
-    "CENTROS TOTALES": 2,
-    "Nº NIÑOS": 353,
-    "AYUNTAMIENTOS": 0,
-    "SERVICIOS SOCIALES": 0,
-    "CENTROS EDUCATIVOS": 1,
-    "CASA JÓVEN": 1
-  },
-    "Santander": {
-      "Nº NIÑOS": 679,
-      "CENTROS TOTALES": 11,
-      "AYUNTAMIENTOS": 0,
-      "SERVICIOS SOCIALES": 7,
-      "CENTROS EDUCATIVOS": 5,
-      "CASA JOVEN": 0
-    },
-    "Torrelavega": {
-      "Nº NIÑOS": 215,
-      "CENTROS TOTALES": 1,
-      "AYUNTAMIENTOS": 0,
-      "SERVICIOS SOCIALES": 0,
-      "CENTROS EDUCATIVOS": 1,
-      "CASA JOVEN": 0
-    },
-    "Castro Urdiales": {
-      "Nº NIÑOS": 26,
-      "CENTROS TOTALES": 1,
-      "AYUNTAMIENTOS": 0,
-      "SERVICIOS SOCIALES": 1,
-      "CENTROS EDUCATIVOS": 0,
-      "CASA JOVEN": 0
-    },
-    "Piélagos": {
-      "Nº NIÑOS": 27,
-      "CENTROS TOTALES": 1,
-      "AYUNTAMIENTOS": 0,
-      "SERVICIOS SOCIALES": 1,
-      "CENTROS EDUCATIVOS": 0,
-      "CASA JOVEN": 0
-    },
-    "Camargo": {
-      "Nº NIÑOS": 289,
-      "CENTROS TOTALES": 6,
-      "AYUNTAMIENTOS": 0,
-      "SERVICIOS SOCIALES": 2,
-      "CENTROS EDUCATIVOS": 3,
-      "CASA JOVEN": 1
-    },
-    "Otros Municipios": {
-    "Nº NIÑOS": 385,
-    "CENTROS TOTALES": 10,
-    "AYUNTAMIENTOS": 0,
-    "SERVICIOS SOCIALES": 5,
-    "CENTROS EDUCATIVOS": 5,
-    "CASA JOVEN": 0
+    "CENTROS TOTALES": 4,
+    "Nº NIÑOS": 390,
+    "AYUNTAMIENTOS": 2,
+    "CASA JOVEN": 1,
+    "CENTROS EDUCATIVOS": 1 
   }
 }
