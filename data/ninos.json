@@ -1,11 +1,45 @@
 {
+  "Rasines": [
+    {
+      "tipo": "Asociación Scout San Jose",
+      "niños": 38
+    },
+    {
+      "tipo": "AYTO RASINES",
+      "niños": 7
+    }
+  ],
+  "Arenas de Iguna": [
+    {
+      "tipo": "AYTO ARENAS DE IGUÑA",
+      "niños": 24
+    }
+  ],
+  "Arredondo": [
+    {
+      "tipo": "AYTO ARREDONDO",
+      "niños": 7
+    }
+  ],
+  "Campoo de Yuso": [
+    {
+      "tipo": "AYTO CAMPOO DE YUSO",
+      "niños": 8
+    }
+  ],
   "Hazas de Cesto": [
     {
       "tipo": "AYTO HAZAS DE CESTO",
       "niños": 7
     }
   ],
-  "Ribamontán al Monte": [
+  "Herrerias": [
+    {
+      "tipo": "AYTO HERRERIAS",
+      "niños": 11
+    }
+  ],
+  "Ribamontan al Monte": [
     {
       "tipo": "AYTO HOZ DE ANERO",
       "niños": 5
@@ -13,6 +47,46 @@
     {
       "tipo": "CEIP TRASMIERA",
       "niños": 35
+    }
+  ],
+  "Lamason": [
+    {
+      "tipo": "AYTO LAMASON",
+      "niños": 9
+    }
+  ],
+  "Anievas": [
+    {
+      "tipo": "AYTO LUDOTECA ANIEVAS",
+      "niños": 6
+    }
+  ],
+  "Argonos": [
+    {
+      "tipo": "AYTO LUDOTECA ARGOÑOS",
+      "niños": 115
+    }
+  ],
+  "Guriezo": [
+    {
+      "tipo": "AYTO LUDOTECA GURIEZO",
+      "niños": 16
+    }
+  ],
+  "Laredo": [
+    {
+      "tipo": "AYTO LUDOTECA LAREDO",
+      "niños": 39
+    },
+    {
+      "tipo": "CAIA LAREDO",
+      "niños": 28
+    }
+  ],
+  "Limpias": [
+    {
+      "tipo": "AYTO LUDOTECA LIMPIAS",
+      "niños": 16
     }
   ],
   "Reinosa": [
@@ -29,6 +103,30 @@
       "niños": 17
     }
   ],
+  "Ruente": [
+    {
+      "tipo": "AYTO LUDOTECA RUENTE",
+      "niños": 7
+    }
+  ],
+  "Villacarriedo": [
+    {
+      "tipo": "AYTO LUDOTECA VILLACARRIEDO",
+      "niños": 6
+    }
+  ],
+  "Villafufre": [
+    {
+      "tipo": "AYTO LUDOTECA VILLAFUFRE",
+      "niños": 9
+    }
+  ],
+  "Ruesga": [
+    {
+      "tipo": "AYTO RUESGA",
+      "niños": 6
+    }
+  ],
   "Colindres": [
     {
       "tipo": "CAIA COLINDRES",
@@ -39,16 +137,10 @@
       "niños": 8
     }
   ],
-  "Laredo": [
-    {
-      "tipo": "CAIA LAREDO",
-      "niños": 28
-    }
-  ],
   "Camargo": [
     {
       "tipo": "CASA JOVEN CAMARGO",
-      "niños": 8
+      "niños": 68
     },
     {
       "tipo": "CD CAMARGO",
@@ -64,21 +156,25 @@
     },
     {
       "tipo": "IES RIA DEL CARMEN",
-      "niños": 113
+      "niños": 363
     },
     {
       "tipo": "UF MALIAÑO FCA",
       "niños": 12
     }
   ],
-  "Santa María de Cayón": [
+  "Santa Maria de Cayon": [
     {
       "tipo": "CASA JOVEN CAYON",
       "niños": 24
     },
     {
       "tipo": "CEIP GERARDO DIEGO",
-      "niños": 329
+      "niños": 330
+    },
+    {
+      "tipo": "VERANO CASA JOVEN CAYON",
+      "niños": 21
     }
   ],
   "Santander": [
@@ -92,11 +188,11 @@
     },
     {
       "tipo": "CC MIGUEL BRAVO",
-      "niños": 189
+      "niños": 219
     },
     {
       "tipo": "CC SAN MARTÍN SANTANDER",
-      "niños": 167
+      "niños": 188
     },
     {
       "tipo": "CC SAN ROQUE - LOS PINARES",
@@ -133,12 +229,24 @@
     {
       "tipo": "UTS Gota de leche 2",
       "niños": 17
+    },
+    {
+      "tipo":"VERANUCO",
+      "niños": 181
     }
   ],
   "Torrelavega": [
     {
       "tipo": "CC EL SALVADOR",
       "niños": 215
+    },
+    {
+      "tipo": "CC SAGRADOS CORAZONES",
+      "niños": 115
+    },
+    {
+      "tipo": "CEIP RAMON MENENDEZ PIDAL",
+      "niños": 26
     }
   ],
   "Santillana del Mar": [
@@ -151,6 +259,12 @@
     {
       "tipo": "CD CASTRO URDIALES",
       "niños": 26
+    }
+  ],
+  "Potes": [
+    {
+      "tipo": "CD EL ESQUILU POTES",
+      "niños": 14
     }
   ],
   "Pielagos": [
@@ -173,16 +287,36 @@
       "niños": 7
     }
   ],
-  "Santoña": [
+  "Santona": [
     {
       "tipo": "CD SANTOÑA",
       "niños": 14
+    }
+  ],
+  "Ampuero": [
+    {
+      "tipo": "CEIP Ampuero",
+      "niños": 139
     }
   ],
   "Bareyo": [
     {
       "tipo": "CEIP BENEDICTO RUIZ AJO",
       "niños": 36
+    }
+  ],
+  "Bezana": [
+    {
+      "tipo": "CEIP BUENAVENTURA GONZALEZ",
+      "niños": 150
+    },
+    {
+      "tipo": "UF SOTO I FCA",
+      "niños": 8
+    },
+    {
+      "tipo": "UF SOTO II FCA",
+      "niños": 6
     }
   ],
   "Val de San Vicente": [
@@ -195,6 +329,12 @@
     {
       "tipo": "CEIP JERÓNIMO PÉREZ SÁINZ DE LA MAZA",
       "niños": 18
+    }
+  ],
+  "Cartes": [
+    {
+      "tipo": "CEIP LOS TORREONES",
+      "niños": 104
     }
   ],
   "Marina de Cudeyo": [
@@ -228,13 +368,13 @@
   "Cabezon de la Sal": [
     {
       "tipo": "CEIP RAMÓN LAZA",
-      "niños": 229
+      "niños": 408
     }
   ],
   "Astillero": [
     {
       "tipo": "CEIP RAMON Y CAJAL",
-      "niños": 64
+      "niños": 186
     },
     {
       "tipo": "HOGAR ASTILLERO NUEVO FUTURO",
@@ -244,7 +384,7 @@
   "Campoo de Suso": [
     {
       "tipo": "CEIP RODRIGUEZ DE CELIS",
-      "niños": 13
+      "niños": 45
     }
   ],
   "Arnuero": [
@@ -265,26 +405,16 @@
       "niños": 14
     }
   ],
-  "Peñarrubia": [
+  "Penarrubia":[
     {
-      "tipo": "CRA Peñarrubia",
-      "niños": 5
+      "tipo": "CRA LIEBANA PEÑARRUBIA",
+      "niños": "5"
     }
   ],
-  "Camaleño": [
+  "Camaleno":[
     {
-      "tipo": "CRA Liébana",
-      "niños": 4
-    }
-  ],
-  "Bezana": [
-    {
-      "tipo": "UF SOTO I FCA",
-      "niños": 8
-    },
-    {
-      "tipo": "UF SOTO II FCA",
-      "niños": 6
+      "tipo": "CRA LIEBANA CAMALEÑO",
+      "niños": "4"
     }
   ]
 }
