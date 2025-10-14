@@ -4,7 +4,7 @@ let dataCache = {};
 const popup = document.getElementById("popup");
 const svgMap = document.getElementById("svgMap");
 
-const municipiosOtros = ["Santander", "Torrelavega", "Castro Urdiales", "Piélagos", "Camargo"];
+const municipiosOtros = ["Santander", "Torrelavega", "Castro Urdiales", "Pielagos", "Camargo"];
 
 const galPorMunicipio = {
   "Potes": "Grupo de Acción Local Liébana",
@@ -17,7 +17,7 @@ const galPorMunicipio = {
 
   "Mancomunidad de Campoo-Cabuerniga": "Saja-Nansa Asociación de Desarrollo Rural",
   "Cabuerniga": "Saja-Nansa Asociación de Desarrollo Rural",
-  "Peñarrubia": "Saja-Nansa Asociación de Desarrollo Rural",
+  "Penarrubia": "Saja-Nansa Asociación de Desarrollo Rural",
   "Comillas": "Saja-Nansa Asociación de Desarrollo Rural",
   "Ruiloba": "Saja-Nansa Asociación de Desarrollo Rural",
   "Udias": "Saja-Nansa Asociación de Desarrollo Rural",
@@ -31,7 +31,6 @@ const galPorMunicipio = {
   "Lamason": "Saja-Nansa Asociación de Desarrollo Rural",
   "Rionansa": "Saja-Nansa Asociación de Desarrollo Rural",
   "Polaciones": "Saja-Nansa Asociación de Desarrollo Rural",
-  "Herrerias": "Saja-Nansa Asociación de Desarrollo Rural",
   "Valdaliga": "Saja-Nansa Asociación de Desarrollo Rural",
   "Val de San Vicente": "Saja-Nansa Asociación de Desarrollo Rural",
   "San Vicente": "Saja-Nansa Asociación de Desarrollo Rural",
@@ -44,7 +43,7 @@ const galPorMunicipio = {
   "Molledo": "Asociación Desarrollo Territorial Campoo - Los Valles",
   "Molledo1": "Asociación Desarrollo Territorial Campoo - Los Valles",
   "Barcena de Pie de Concha": "Asociación Desarrollo Territorial Campoo - Los Valles",
-  "Arenas de Iguña": "Asociación Desarrollo Territorial Campoo - Los Valles",
+  "Arenas de Iguna": "Asociación Desarrollo Territorial Campoo - Los Valles",
   "Anievas": "Asociación Desarrollo Territorial Campoo - Los Valles",
   "Pesquera": "Asociación Desarrollo Territorial Campoo - Los Valles",
   "Santiurde de Reinosa": "Asociación Desarrollo Territorial Campoo - Los Valles",
@@ -65,7 +64,7 @@ const galPorMunicipio = {
   "Villacarriedo": "Valles Pasiegos Grupo de Acción Local",
   "Saro": "Valles Pasiegos Grupo de Acción Local",
   "Villafufre": "Valles Pasiegos Grupo de Acción Local",
-  "Santa María de Cayón": "Valles Pasiegos Grupo de Acción Local",
+  "Santa Maria de Cayon": "Valles Pasiegos Grupo de Acción Local",
   "Castañeda": "Valles Pasiegos Grupo de Acción Local",
   "Corvera de Toranzo": "Valles Pasiegos Grupo de Acción Local",
   "Santiurde de Toranzo": "Valles Pasiegos Grupo de Acción Local",
@@ -89,7 +88,7 @@ const galPorMunicipio = {
   "Solorzano": "Grupo de Acción Local Asón - Agüera - Trasmiera",
   "Voto": "Grupo de Acción Local Asón - Agüera - Trasmiera",
 
-  "Reocín": "Otros Municipios",
+  "Reocin": "Otros Municipios",
   "Cartes": "Otros Municipios",
   "Santillana del Mar":"Otros Municipios",
   "San Felices de Buelna": "Otros Municipios",
@@ -108,8 +107,8 @@ const galPorMunicipio = {
   "Arnuero": "Otros Municipios",
   "Noja": "Otros Municipios",
   "Escalante": "Otros Municipios",
-  "Argoños": "Otros Municipios",
-  "Santoña": "Otros Municipios",
+  "Argonos": "Otros Municipios",
+  "Santona": "Otros Municipios",
   "Laredo": "Otros Municipios",
   "Colindres": "Otros Municipios",
 };
@@ -137,6 +136,8 @@ svgMap.addEventListener("load", () => {
     console.error("❌ No se pudo acceder al contenido del SVG.");
     return;
   }
+ 
+
 
   const zonas = svgDoc.querySelectorAll("path");
   zonas.forEach(path => {
@@ -149,9 +150,13 @@ svgMap.addEventListener("load", () => {
 
       const nombre = path.id;
 
+       // Nombre “bonito” con tildes/ñ desde <title>
+      const titleTag = path.querySelector("title");
+      const displayName = titleTag ? titleTag.textContent.trim() : nombre;
+
     if (currentMap === "mancomunidades") {
   if (municipiosOtros.includes(nombre)) {
-    fetchDataAndShowPopup(nombre, nombre);
+    fetchDataAndShowPopup(nombre, displayName);
   } else {
     const gal = galPorMunicipio[nombre];
     if (!gal) {
@@ -161,7 +166,7 @@ svgMap.addEventListener("load", () => {
     fetchDataAndShowPopup(gal, gal);
   }
 } else {
-  fetchDataAndShowPopup(nombre, nombre);
+  fetchDataAndShowPopup(nombre, displayName);
 }
 
     });
@@ -227,4 +232,4 @@ function showPopup(info, name) {
   popup.style.top = "10px";
   popup.classList.remove("hidden");
 }
-  
+
