@@ -1,100 +1,297 @@
 {
-  "Hazas de Cesto": {
-    "AYUNTAMIENTOS": []
+  "Rasines": {
+    "Ayuntamiento": [
+      "AYTO Rasines"
+    ],
+    "Servicios sociales": [
+      "ASOC Scout San Jose"
+    ]
   },
-  "Ribamontán al Monte": {
-    "AYUNTAMIENTOS": []
+  "Arenas de Iguna": {
+    "Ayuntamiento": [
+      "AYTO Arenas de Iguña"
+    ]
   },
-  "Reinosa": {
-    "AYUNTAMIENTOS": [],
-    "SERVICIOS SOCIALES": [" Ludoteca", " Ludoteca SS", " CD La Güariza"]
+  "Arredondo": {
+    "Ayuntamiento": [
+      "AYTO Arredondo"
+    ]
   },
-  "Colindres": {
-    "SERVICIOS SOCIALES": ["CAIA Colindres", " Hogar Colindres FCA"]
+  "Campoo de yuso": {
+    "Ayuntamiento": [
+      "AYTO Campoo de Yuso"
+    ]
+  },
+  "Hazas de cesto": {
+    "Ayuntamiento": [
+      "AYTO Hazas de Cesto"
+    ]
+  },
+  "Herrerias": {
+    "Ayuntamiento": [
+      "AYTO Herrerías"
+    ]
+  },
+  "Ribamontan al Monte": {
+    "Ayuntamiento": [
+      "AYTO Hoz de Anero"
+    ],
+    "Centros educativos": [
+      "CEIP Trasmiera"
+    ]
+  },
+  "Lamason": {
+    "Ayuntamiento": [
+      "AYTO Lamasón"
+    ]
+  },
+  "Anievas": {
+    "Ayuntamiento": [
+      "AYTO LUDO Anievas"
+    ]
+  },
+  "Argonos": {
+    "Ayuntamiento": [
+      "AYTO LUDO Argoños"
+    ]
+  },
+  "Guriezo": {
+    "Ayuntamiento": [
+      "AYTO LUDO Guriezo"
+    ]
   },
   "Laredo": {
-    "SERVICIOS SOCIALES": [" CAIA Laredo"]
+    "Ayuntamiento": [
+      "AYTO LUDO Laredo"
+    ],
+    "Servicios sociales": [
+      "CAIA Laredo"
+    ]
+  },
+  "Limpias": {
+    "Ayuntamiento": [
+      "LUDO Limpias"
+    ]
+  },
+  "Reinosa": {
+    "Ayuntamiento": [
+      "LUDO Reinosa",
+      "LUDO Reinosa SS"
+    ],
+    "Servicios sociales": [
+      "CD La Güariza Reinosa"
+    ]
+  },
+  "Ruente": {
+    "Ayuntamiento": [
+      "LUDO Ruente"
+    ]
+  },
+  "Villacarriedo": {
+    "Ayuntamiento": [
+      "LUDO Villacarriedo"
+    ]
+  },
+  "Villafufre": {
+    "Ayuntamiento": [
+      "LUDO Villafufre"
+    ]
+  },
+  "Ruesga": {
+    "Ayuntamiento": [
+      "AYTO Ruesga"
+    ]
+  },
+  "Colindres": {
+    "Servicios sociales": [
+      "CAIA Colindres",
+      "UF Colindres FCA"
+    ]
   },
   "Camargo": {
-    "CENTROS EDUCATIVOS": [" CEIP Matilde de la Torre", " CEIP Gloria Fuertes", " IES Ria del Carmen"],
-    "SERVICIOS SOCIALES": [" CD Camargo", " UF MALIAÑO FCA"],
-    "CASA JOVEN": [" Casa Joven Camargo"]
+    "Ayuntamiento": [
+      "Casa joven Camargo"
+    ],
+    "Centros educativos": [
+      "CEIP Gloria Fuertes",
+      "CEIP Matilde de la Torre",
+      "IES Ria del Carmen"
+    ],
+    "Servicios sociales": [
+      "CD Camargo",
+      "UF Maliaño FCA"
+    ]
   },
-  "Santa María de Cayón": {
-    "CENTROS EDUCATIVOS": [" CEIP Gerardo Diego"],
-    "CASA JOVEN": [" Casa Joven Cayón"]
+  "Santa Maria de Cayon": {
+    "Ayuntamiento": [
+      "Casa joven Cayón",
+      "Verano Casa joven cayón"
+    ],
+    "Centros educativos": [
+      "CEIP Gerardo Diego"
+    ]
   },
   "Santander": {
-    "CENTROS EDUCATIVOS": ["CC Ángeles Custodios", " CC Bellavista", " CC Miguel Bravo", " CC San martín", " CC San Roque de los Pinares"],
-    "SERVICIOS SOCIALES": [" CD Carolina López Dóriga", " CD Nuevo Futuro", " UTS CASTILLA-HERMIDA", " UTS GOTA DE LECHE", " HOGAR ALISAL N.F", " UF PÉREZ FCA", " UF VARGAS FCA"]
+    "Ayuntamiento": [
+      "Veranuco"
+    ],
+    "Centros educativos": [
+      "CC Ángeles Custodios",
+      "CC Bellavista",
+      "CC Miguel Bravo",
+      "CC San Martín Santander",
+      "CC San Roque - Los Pinares"
+    ],
+    "Servicios sociales": [
+      "CD Carolina López Dóriga",
+      "CD Nuevo Futuro",
+      "Hogar Alisal Nuevo Futuro",
+      "UF Pérez FCA",
+      "UF Vargas FCA",
+      "UTS Castilla-Hermida",
+      "UTS Gota de leche",
+      "UTS Gota de leche 2"
+    ]
   },
   "Torrelavega": {
-    "CENTROS EDUCATIVOS": [" CC El Salvador"]
+    "Centros educativos": [
+      "CC El Salvador",
+      "CC Sagrados Corazones",
+      "CEIP Ramón Menéndez Pidal"
+    ]
   },
   "Santillana del Mar": {
-    "SERVICIOS SOCIALES": ["CD Altamira de los Valles"]
+    "Servicios sociales": [
+      "CD Altamira los Valles"
+    ]
   },
   "Castro Urdiales": {
-    "SERVICIOS SOCIALES": [" CD Castro Urdiales"]
+    "Servicios sociales": [
+      "CD Castro Úrdiales"
+    ]
+  },
+  "Potes": {
+    "Servicios sociales": [
+      "CD El Esquilu"
+    ]
   },
   "Pielagos": {
-    "SERVICIOS SOCIALES": ["CD La Estela de Zurtia"]
+    "Servicios sociales": [
+      "CD La Estela de Zurita"
+    ]
   },
   "Los Corrales de Buelna": {
-    "CENTROS EDUCATIVOS": ["IES Las Estelas de Cantabria"],
-    "SERVICIOS SOCIALES": ["CD Los Corrales de Buelna", " US Los Corrales de Buelna FCA"]
+    "Centros educativos": [
+      "IES Estelas de Cantabria"
+    ],
+    "Servicios sociales": [
+      "CD Los Corrales de Buelna",
+      "US Los Corrales de Buelna FCA"
+    ]
   },
-  "Santoña": {
-    "SERVICIOS SOCIALES": ["CD Santoña"]
+  "Santona": {
+    "Servicios sociales": [
+      "CD Santoña"
+    ]
+  },
+  "Ampuero": {
+    "Centros educativos": [
+      "CEIP Ampuero"
+    ]
   },
   "Bareyo": {
-    "CENTROS EDUCATIVOS": ["CEIP Benedicto Ruiz Ajo"]
-  },
-  "Val de San Vicente": {
-    "CENTROS EDUCATIVOS": ["CEIP Fuente Salín"]
-  },
-  "Soba": {
-    "CENTROS EDUCATIVOS": ["CEIP Jerónimo Sainz de la Maza"]
-  },
-  "Marina de Cudeyo": {
-    "CENTROS EDUCATIVOS": [" CEIP Marina de Cudeyo"],
-    "SERVICIOS SOCIALES": [" US Pedrosa FCA"]
-  },
-  "Liendo": {
-    "CENTROS EDUCATIVOS": ["CEIP Pregrino Avendaño"]
-  },
-  "Polanco": {
-    "CENTROS EDUCATIVOS": ["CEIP Pérez Galdos"]
-  },
-  "Alfoz de Lloredo": {
-    "CENTROS EDUCATIVOS": ["CEIP Quirós"]
-  },
-  "Cabezon de la Sal": {
-    "CENTROS EDUCATIVOS": ["CEIP Ramón Laza"]
-  },
-  "Astillero": {
-    "CENTROS EDUCATIVOS": ["CEIP Ramón y Cajal"],
-    "SERVICIOS SOCIALES": ["HOGAR ASTILLERO N.F"]
-  },
-  "Campoo de Suso": {
-    "CENTROS EDUCATIVOS": ["CEIP Rodriguez de Celis"]
-  },
-  "Arnuero": {
-    "CENTROS EDUCATIVOS": ["CEIP San Pedro Apostol"]
-  },
-  "Valdeolea": {
-    "CENTROS EDUCATIVOS": ["CEIP Valdeolea"]
-  },
-  "Valderredible": {
-    "CENTROS EDUCATIVOS": ["CEIP Virgen de la Velilla"]
-  },
-  "Camaleño": {
-    "CENTROS EDUCATIVOS": ["CRA Liébana"]
-  },
-  "Peñarrubia": {
-    "CENTROS EDUCATIVOS": ["CRA Peñarrubia"]
+    "Centros educativos": [
+      "CEIP Benedicto Ruiz Ajo"
+    ]
   },
   "Bezana": {
-    "SERVICIOS SOCIALES": ["UF Soto I", "UF Soto II"]
+    "Centros educativos": [
+      "CEIP Buenaventura González"
+    ],
+    "Servicios sociales": [
+      "UF Soto I FCA",
+      "UF Soto II FCA"
+    ]
+  },
+  "Val de San Vicente": {
+    "Centros educativos": [
+      "CEIP Fuente Salín"
+    ]
+  },
+  "Soba": {
+    "Centros educativos": [
+      "CEIP Jerónimo Pérez Sáinz de la Maza"
+    ]
+  },
+  "Cartes": {
+    "Centros educativos": [
+      "CEIP Los Torreones"
+    ]
+  },
+  "Marina de Cudeyo": {
+    "Centros educativos": [
+      "CEIP Marina de Cudeyo"
+    ],
+    "Servicios sociales": [
+      "US Pedrosa FCA"
+    ]
+  },
+  "Liendo": {
+    "Centros educativos": [
+      "CEIP Peregrino Avendaño"
+    ]
+  },
+  "Polanco": {
+    "Centros educativos": [
+      "CEIP Pérez Galdós"
+    ]
+  },
+  "Alfoz de Lloredo": {
+    "Centros educativos": [
+      "CEIP Quirós"
+    ]
+  },
+  "Cabezon de la Sal": {
+    "Centros educativos": [
+      "CEIP Ramón Laza"
+    ]
+  },
+  "Astillero": {
+    "Centros educativos": [
+      "CEIP Ramón y Cajal"
+    ],
+    "Servicios sociales": [
+      "Hogar Astillero Nuevo Futuro"
+    ]
+  },
+  "Campoo de Suso": {
+    "Centros educativos": [
+      "CEIP Rodriguez de Celis"
+    ]
+  },
+  "Arnuero": {
+    "Centros educativos": [
+      "CEIP San Pedro Apostol"
+    ]
+  },
+  "Valdeolea": {
+    "Centros educativos": [
+      "CEIP Valdeolea"
+    ]
+  },
+  "Valderredible": {
+    "Centros educativos": [
+      "CEIP Virgen de la Velilla"
+    ]
+  },
+  "Penarrubia": {
+    "Centros educativos": [
+      "CRA Liébana Peñarrubia"
+    ]
+  },
+  "Camaleno": {
+    "Centros educativos": [
+      "CRA Liébana Camaleño"
+    ]
   }
 }
