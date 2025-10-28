@@ -113,6 +113,23 @@ const galPorMunicipio = {
   "Colindres": "Otros Municipios",
 };
 
+window.TOTALES_CANTABRIA = window.TOTALES_CANTABRIA || {
+  ninos: 4394,
+  centros: 76
+};
+
+function showDefaultPopup(){
+  const t = window.TOTALES_CANTABRIA || {};
+  const val = (x)=> (x ?? "—");
+  popup.innerHTML = `
+    <strong>Cantabria - Totales</strong><br/>
+    Nº de niños: ${val(t.ninos)}<br/>
+    Nº de centros: ${val(t.centros)}
+  `;
+  popup.style.left = "100px";
+  popup.style.top  = "10px";
+  popup.classList.remove("hidden");
+}
 
 document.querySelectorAll(".tab").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -127,6 +144,7 @@ document.querySelectorAll(".tab").forEach(btn => {
     } else {
       svgMap.setAttribute("data", "cantabria.svg");
     }
+    
   });
 });
 
@@ -136,8 +154,6 @@ svgMap.addEventListener("load", () => {
     console.error("❌ No se pudo acceder al contenido del SVG.");
     return;
   }
- 
-
 
   const zonas = svgDoc.querySelectorAll("path");
   zonas.forEach(path => {
@@ -150,27 +166,39 @@ svgMap.addEventListener("load", () => {
 
       const nombre = path.id;
 
-       // Nombre “bonito” con tildes/ñ desde <title>
       const titleTag = path.querySelector("title");
       const displayName = titleTag ? titleTag.textContent.trim() : nombre;
 
-    if (currentMap === "mancomunidades") {
-  if (municipiosOtros.includes(nombre)) {
-    fetchDataAndShowPopup(nombre, displayName);
-  } else {
-    const gal = galPorMunicipio[nombre];
-    if (!gal) {
-      popup.classList.add("hidden");
-      return;
-    }
-    fetchDataAndShowPopup(gal, gal);
-  }
-} else {
-  fetchDataAndShowPopup(nombre, displayName);
-}
-
+      if (currentMap === "mancomunidades") {
+        if (municipiosOtros.includes(nombre)) {
+          fetchDataAndShowPopup(nombre, displayName);
+        } else {
+          const gal = galPorMunicipio[nombre];
+          if (!gal) {
+            popup.classList.add("hidden");
+            return;
+          }
+          fetchDataAndShowPopup(gal, gal);
+        }
+      } else {
+        fetchDataAndShowPopup(nombre, displayName);
+      }
     });
   });
+
+  const svgRoot = svgDoc.documentElement;
+  svgRoot.addEventListener("click", (e) => {
+    const clickedPath = e.target.closest("path");
+    if (!clickedPath) showDefaultPopup();
+  });
+
+  showDefaultPopup();
+});
+
+document.addEventListener("click", (e) => {
+  const wrapper = document.querySelector(".mapa-wrapper");
+  if (!wrapper) return;
+  if (!wrapper.contains(e.target)) showDefaultPopup();
 });
 
 function fetchDataAndShowPopup(lookupKey, displayName) {
