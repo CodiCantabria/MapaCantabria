@@ -1,15 +1,8 @@
-let currentMap = "niños";           
-let dataCache  = {};                
+let currentMap = "niños";
+let dataCache = {};
 
-const popup  = document.getElementById("popup");
+const popup = document.getElementById("popup");
 const svgMap = document.getElementById("svgMap");
-
-
-window.TOTALES_CANTABRIA = window.TOTALES_CANTABRIA || {
-  ninos: 4.394,     
-  centros: 76    
-};
-
 
 const municipiosOtros = ["Santander", "Torrelavega", "Castro Urdiales", "Pielagos", "Camargo"];
 
@@ -127,17 +120,15 @@ document.querySelectorAll(".tab").forEach(btn => {
     btn.classList.add("active");
 
     currentMap = btn.dataset.mapa;
+    popup.classList.add("hidden");
 
     if (currentMap === "mancomunidades") {
       svgMap.setAttribute("data", "mancomunidades.svg");
     } else {
       svgMap.setAttribute("data", "cantabria.svg");
     }
-
-    showDefaultPopup();
   });
 });
-
 
 svgMap.addEventListener("load", () => {
   const svgDoc = svgMap.contentDocument;
@@ -145,57 +136,42 @@ svgMap.addEventListener("load", () => {
     console.error("❌ No se pudo acceder al contenido del SVG.");
     return;
   }
+ 
 
-  
+
   const zonas = svgDoc.querySelectorAll("path");
   zonas.forEach(path => {
     if (!path.id) return;
+
     path.style.cursor = "pointer";
-
-    path.addEventListener("click", (ev) => {
-      ev.stopPropagation(); 
-
-      
+    path.addEventListener("click", () => {
       const fill = path.getAttribute("fill") || path.style.fill;
       if (!fill || fill === "none" || fill === "#ffffff" || fill === "#fff") return;
 
       const nombre = path.id;
+
+       // Nombre “bonito” con tildes/ñ desde <title>
       const titleTag = path.querySelector("title");
       const displayName = titleTag ? titleTag.textContent.trim() : nombre;
 
-      if (currentMap === "mancomunidades") {
-        if (municipiosOtros.includes(nombre)) {
-          fetchDataAndShowPopup(nombre, displayName);
-        } else {
-          const gal = galPorMunicipio[nombre];
-          if (!gal) {
-            popup.classList.add("hidden");
-            return;
-          }
-          fetchDataAndShowPopup(gal, gal);
-        }
-      } else {
-        fetchDataAndShowPopup(nombre, displayName);
-      }
+    if (currentMap === "mancomunidades") {
+  if (municipiosOtros.includes(nombre)) {
+    fetchDataAndShowPopup(nombre, displayName);
+  } else {
+    const gal = galPorMunicipio[nombre];
+    if (!gal) {
+      popup.classList.add("hidden");
+      return;
+    }
+    fetchDataAndShowPopup(gal, gal);
+  }
+} else {
+  fetchDataAndShowPopup(nombre, displayName);
+}
+
     });
   });
-
-  const svgRoot = svgDoc.documentElement;
-  svgRoot.addEventListener("click", (e) => {
-    const clickedPath = e.target.closest("path");
-    if (!clickedPath) showDefaultPopup();
-  });
-
-  showDefaultPopup();
 });
-
-// Click fuera del área del mapa => Totales
-document.addEventListener("click", (e) => {
-  const wrapper = document.querySelector(".mapa-wrapper");
-  if (!wrapper) return;
-  if (!wrapper.contains(e.target)) showDefaultPopup();
-});
-
 
 function fetchDataAndShowPopup(lookupKey, displayName) {
   const jsonFile = currentMap === 'niños' ? 'ninos' :
@@ -213,6 +189,7 @@ function fetchDataAndShowPopup(lookupKey, displayName) {
         displayName = `${lookupKey} (en ${gal})`;
       }
     }
+
     showPopup(info, displayName);
   } else {
     fetch(`data/${jsonFile}.json`)
@@ -228,6 +205,7 @@ function fetchDataAndShowPopup(lookupKey, displayName) {
             displayName = `${lookupKey} (en ${gal})`;
           }
         }
+
         showPopup(info, displayName);
       })
       .catch(err => console.error("❌ Error al cargar JSON:", err));
@@ -241,14 +219,8 @@ function showPopup(info, name) {
   }
 
   let html = `<strong>${name}</strong><br/>`;
-
   if (Array.isArray(info)) {
-    html += info.map(item => {
-      const n = (typeof item?.niños === "number" ? item.niños :
-                (typeof item?.ninos === "number" ? item.ninos : 0));
-      const tipo = (item?.tipo ?? 'Total');
-      return `- ${tipo}: ${n} NIÑOS`;
-    }).join("<br/>");
+    html += info.map(item => `- ${item.tipo}: ${item.niños} NIÑOS`).join("<br/>");
   } else if (typeof info === "object") {
     html += Object.entries(info).map(([k, v]) => `${k}: ${v}`).join("<br/>");
   } else {
@@ -256,26 +228,7 @@ function showPopup(info, name) {
   }
 
   popup.innerHTML = html;
-
-  // MISMA POSICIÓN QUE EL RESTO DE POPUPS
-  popup.style.right = "";
-  popup.style.left  = "100px";
-  popup.style.top   = "10px";
-
-  popup.classList.remove("hidden");
-}
-
-function showDefaultPopup(){
-  const t = window.TOTALES_CANTABRIA || {};
-  const val = (x)=> (x ?? "—");
-  popup.innerHTML = `
-    <strong>Cantabria - Totales</strong><br/>
-    Nº de niños: ${val(t.ninos)}<br/>
-    Nº de centros: ${val(t.centros)}
-  `;
-  // MISMA POSICIÓN QUE LOS POPUPS DE MUNICIPIO
-  popup.style.right = "";
-  popup.style.left  = "100px";
-  popup.style.top   = "10px";
+  popup.style.left = "100px";
+  popup.style.top = "10px";
   popup.classList.remove("hidden");
 }
