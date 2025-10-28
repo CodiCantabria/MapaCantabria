@@ -105,3 +105,24 @@ object#svgMap {
     font-size: 0.9rem;
   }
 }
+.site-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6em;
+  margin-bottom: 1em;
+  flex-wrap: wrap;             
+  text-align: center;          
+}
+
+.site-header h1{
+  margin: 0;                    
+}
+
+.logo-title{
+  width: clamp(40px, 7vw, 64px);
+  height: auto;                 
+  object-fit: contain;          
+  display: block;               
+  flex: 0 0 auto;
+}
