@@ -1,7 +1,7 @@
 {
   "Rasines": [
     {
-      "tipo": "Asociación Scout San Jose",
+      "tipo": "ASOCIACIÓN SCOUT SAN JOSÉ",
       "niños": 38
     },
     {
@@ -35,7 +35,7 @@
   ],
   "Herrerias": [
     {
-      "tipo": "AYTO HERRERIAS",
+      "tipo": "AYTO HERRERÍAS",
       "niños": 11
     }
   ],
@@ -51,7 +51,7 @@
   ],
   "Lamason": [
     {
-      "tipo": "AYTO LAMASON",
+      "tipo": "AYTO LAMASÓN",
       "niños": 9
     }
   ],
@@ -155,7 +155,7 @@
       "niños": 86
     },
     {
-      "tipo": "IES RIA DEL CARMEN",
+      "tipo": "IES RÍA DEL CARMEN",
       "niños": 238
     },
     {
@@ -165,7 +165,7 @@
   ],
   "Santa Maria de Cayon": [
     {
-      "tipo": "CASA JOVEN CAYON",
+      "tipo": "CASA JOVEN CAYÓN",
       "niños": 24
     },
     {
@@ -173,7 +173,7 @@
       "niños": 330
     },
     {
-      "tipo": "VERANO CASA JOVEN CAYON",
+      "tipo": "VERANO CASA JOVEN CAYÓN",
       "niños": 21
     }
   ],
@@ -219,7 +219,7 @@
       "niños": 10
     },
     {
-      "tipo" :"UF AMOS FCA",
+      "tipo" :"UF AMÓS FCA",
       "niños": 2
     },
     {
@@ -227,11 +227,11 @@
       "niños": 24
     },
     {
-      "tipo": "UTS Gota de leche",
+      "tipo": "UTS GOTA DE LECHE",
       "niños": 14
     },
     {
-      "tipo": "UTS Gota de leche 2",
+      "tipo": "UTS GOTA DE LECHE II",
       "niños": 17
     },
     {
@@ -249,7 +249,7 @@
       "niños": 115
     },
     {
-      "tipo": "CEIP RAMON MENENDEZ PIDAL",
+      "tipo": "CEIP RAMÓN MENÉNDEZ PIDAL",
       "niños": 26
     }
   ],
@@ -311,7 +311,7 @@
   ],
   "Bezana": [
     {
-      "tipo": "CEIP BUENAVENTURA GONZALEZ",
+      "tipo": "CEIP BUENAVENTURA GONZÁLEZ",
       "niños": 150
     },
     {
@@ -325,7 +325,7 @@
   ],
   "Val de San Vicente": [
     {
-      "tipo": "CEIP FUENTE SALIN",
+      "tipo": "CEIP FUENTE SALÍN",
       "niños": 93
     }
   ],
@@ -377,7 +377,7 @@
   ],
   "Astillero": [
     {
-      "tipo": "CEIP RAMON Y CAJAL",
+      "tipo": "CEIP RAMÓN Y CAJAL",
       "niños": 186
     },
     {
@@ -387,7 +387,7 @@
   ],
   "Campoo de Suso": [
     {
-      "tipo": "CEIP RODRIGUEZ DE CELIS",
+      "tipo": "CEIP RODRÍGUEZ DE CELIS",
       "niños": 45
     }
   ],
@@ -411,13 +411,13 @@
   ],
   "Penarrubia":[
     {
-      "tipo": "CRA LIEBANA PEÑARRUBIA",
+      "tipo": "CRA LIÉBANA PEÑARRUBIA",
       "niños": 5
     }
   ],
   "Camaleno":[
     {
-      "tipo": "CRA LIEBANA CAMALEÑO",
+      "tipo": "CRA LIÉBANA CAMALEÑO",
       "niños": 4
     }
   ]
