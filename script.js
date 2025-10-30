@@ -113,28 +113,35 @@ const galPorMunicipio = {
   "Colindres": "Otros Municipios",
 };
 
+// Valores manuales, sin cargar de ningún JSON:
 window.TOTALES_CANTABRIA = window.TOTALES_CANTABRIA || {
   ninos: 4271,
-  centros: 80
+  centros: 80,
+  ayuntamientos: 21,
+  serviciosSociales: 25,
+  centrosEducativos: 32,
+  asociaciones: 1,
+  casaJoven: 1
 };
 
-function showDefaultPopup(){
+function showDefaultPopup() {
   const t = window.TOTALES_CANTABRIA || {};
-  const val = (x)=> (x ?? "—");
+  const val = (x) => (x ?? "—");
   popup.innerHTML = `
     <strong>Cantabria - Totales</strong><br/>
     Total niños: ${val(t.ninos)}<br/>
     Total centros: ${val(t.centros)}<br/>
-     - Ayuntamientos: 22<br/>
-     - Servicios Sociales: 25</br>
-     - Centros educativos: 32</br>
-     - Asociaciones: 1
-
+    - Ayuntamientos: ${val(t.ayuntamientos)}<br/>
+    - Servicios Sociales: ${val(t.serviciosSociales)}<br/>
+    - Centros educativos: ${val(t.centrosEducativos)}<br/>
+    - Asociaciones: ${val(t.asociaciones)}<br/>
+    - Casa Joven: ${val(t.casaJoven)}
   `;
   popup.style.left = "100px";
-  popup.style.top  = "10px";
+  popup.style.top = "10px";
   popup.classList.remove("hidden");
 }
+
 
 document.querySelectorAll(".tab").forEach(btn => {
   btn.addEventListener("click", () => {
