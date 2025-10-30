@@ -114,8 +114,8 @@ const galPorMunicipio = {
 };
 
 window.TOTALES_CANTABRIA = window.TOTALES_CANTABRIA || {
-  ninos: 4394,
-  centros: 76
+  ninos: 4271,
+  centros: 80
 };
 
 function showDefaultPopup(){
@@ -123,8 +123,13 @@ function showDefaultPopup(){
   const val = (x)=> (x ?? "—");
   popup.innerHTML = `
     <strong>Cantabria - Totales</strong><br/>
-    Nº de niños: ${val(t.ninos)}<br/>
-    Nº de centros: ${val(t.centros)}
+    Total niños: ${val(t.ninos)}<br/>
+    Total centros: ${val(t.centros)}<br/>
+     - Ayuntamientos: 22<br/>
+     - Servicios Sociales: 25</br>
+     - Centros educativos: 32</br>
+     - Asociaciones: 1
+
   `;
   popup.style.left = "100px";
   popup.style.top  = "10px";
