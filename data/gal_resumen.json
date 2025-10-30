@@ -1,5 +1,5 @@
 {
-  "Asociación Desarrollo Territorial Campoo - Los Valles": {
+  "Campoo - Los Valles": {
     "CENTROS TOTALES": 9,
     "Nº NIÑOS": 144, 
     "AYUNTAMIENTOS": 5,
@@ -18,14 +18,14 @@
     "Nº NIÑOS": 26,
     "SERVICIOS SOCIALES": 1
   },
-  "Grupo de Acción Local Asón - Agüera - Trasmiera": {
+  "Asón Agüera Trasmiera": {
     "CENTROS TOTALES": 12,
     "Nº NIÑOS": 323,
     "AYUNTAMIENTOS": 7,
     "ASOCIACIONES": 1,
     "CENTROS EDUCATIVOS": 4
   },
-  "Grupo de Acción Local Liébana": {
+  "Liébana": {
     "CENTROS TOTALES": 3,
     "Nº NIÑOS": 23,
     "SERVICIOS SOCIALES": 1,
@@ -43,7 +43,7 @@
     "Nº NIÑOS": 27,
     "SERVICIOS SOCIALES": 1 
   },
-  "Saja-Nansa Asociación de Desarrollo Rural": {
+  "Saja - Nansa": {
     "CENTROS TOTALES": 6,
     "Nº NIÑOS": 551,
     "AYUNTAMIENTOS": 3,
@@ -61,7 +61,7 @@
     "Nº NIÑOS": 356,
     "CENTROS EDUCATIVOS": 3
   },
-  "Valles Pasiegos Grupo de Acción Local": {
+  "Valles Pasiegos": {
     "CENTROS TOTALES": 4,
     "Nº NIÑOS": 390,
     "AYUNTAMIENTOS": 3,
