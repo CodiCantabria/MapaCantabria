@@ -156,7 +156,7 @@
     },
     {
       "tipo": "IES RIA DEL CARMEN",
-      "niños": 363
+      "niños": 238
     },
     {
       "tipo": "UF MALIAÑO FCA",
@@ -217,6 +217,10 @@
     {
       "tipo": "UF VARGAS FCA",
       "niños": 10
+    },
+    {
+      "tipo" :"UF AMOS FCA",
+      "niños": 2
     },
     {
       "tipo": "UTS CASTILLA-HERMIDA",
@@ -408,13 +412,13 @@
   "Penarrubia":[
     {
       "tipo": "CRA LIEBANA PEÑARRUBIA",
-      "niños": "5"
+      "niños": 5
     }
   ],
   "Camaleno":[
     {
       "tipo": "CRA LIEBANA CAMALEÑO",
-      "niños": "4"
+      "niños": 4
     }
   ]
 }
