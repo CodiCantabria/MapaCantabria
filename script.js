@@ -1,4 +1,4 @@
-let currentMap = "niños";
+let currentMap = document.querySelector('.tab.active')?.dataset?.mapa || 'niños';
 let dataCache = {};
 
 const popup = document.getElementById("popup");
@@ -270,5 +270,6 @@ function showPopup(info, name) {
   popup.style.top = "10px";
   popup.classList.remove("hidden");
 }
+
 
 
