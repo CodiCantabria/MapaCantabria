@@ -76,7 +76,7 @@
   "Reinosa": {
     "Ayuntamiento": [
       "LUDO Reinosa",
-      "LUDO Reinosa SS"
+      " LUDO Reinosa SS"
     ],
     "Servicios sociales": [
       "CD La Güariza Reinosa"
@@ -105,7 +105,7 @@
   "Colindres": {
     "Servicios sociales": [
       "CAIA Colindres",
-      "UF Colindres FCA"
+      " UF Colindres FCA"
     ]
   },
   "Camargo": {
@@ -114,18 +114,18 @@
     ],
     "Centros educativos": [
       "CEIP Gloria Fuertes",
-      "CEIP Matilde de la Torre",
-      "IES Ria del Carmen"
+      " CEIP Matilde de la Torre",
+      " IES Ria del Carmen"
     ],
     "Servicios sociales": [
       "CD Camargo",
-      "UF Maliaño FCA"
+      " UF Maliaño FCA"
     ]
   },
   "Santa Maria de Cayon": {
     "Ayuntamiento": [
       "Casa joven Cayón",
-      "Verano Casa joven cayón"
+      " Verano Casa joven cayón"
     ],
     "Centros educativos": [
       "CEIP Gerardo Diego"
@@ -137,28 +137,28 @@
     ],
     "Centros educativos": [
       "CC Ángeles Custodios",
-      "CC Bellavista",
-      "CC Miguel Bravo",
-      "CC San Martín Santander",
-      "CC San Roque - Los Pinares"
+      " CC Bellavista",
+      " CC Miguel Bravo",
+      " CC San Martín Santander",
+      " CC San Roque - Los Pinares"
     ],
     "Servicios sociales": [
       "CD Carolina López Dóriga",
-      "CD Nuevo Futuro",
-      "Hogar Alisal Nuevo Futuro",
-      "UF Pérez FCA",
-      "UF Vargas FCA",
-      "UF Amos FCA",
-      "UTS Castilla-Hermida",
-      "UTS Gota de leche",
-      "UTS Gota de leche 2"
+      " CD Nuevo Futuro",
+      " Hogar Alisal Nuevo Futuro",
+      " UF Pérez FCA",
+      " UF Vargas FCA",
+      " UF Amos FCA",
+      " UTS Castilla-Hermida",
+      " UTS Gota de leche",
+      " UTS Gota de leche 2"
     ]
   },
   "Torrelavega": {
     "Centros educativos": [
       "CC El Salvador",
-      "CC Sagrados Corazones",
-      "CEIP Ramón Menéndez Pidal"
+      " CC Sagrados Corazones",
+      " CEIP Ramón Menéndez Pidal"
     ]
   },
   "Santillana del Mar": {
@@ -187,7 +187,7 @@
     ],
     "Servicios sociales": [
       "CD Los Corrales de Buelna",
-      "US Los Corrales de Buelna FCA"
+      " US Los Corrales de Buelna FCA"
     ]
   },
   "Santona": {
@@ -211,7 +211,7 @@
     ],
     "Servicios sociales": [
       "UF Soto I FCA",
-      "UF Soto II FCA"
+      " UF Soto II FCA"
     ]
   },
   "Val de San Vicente": {
