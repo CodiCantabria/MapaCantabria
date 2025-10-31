@@ -13,7 +13,7 @@ const galPorMunicipio = {
   "Cillorigo de Liebana": "Liébana",
   "Pesaguero": "Liébana",
   "Vega de Liebana": "Liébana",
-  "Camaleño": "Liébana",
+  "Camaleno": "Liébana",
   "Penarrubia": "Liébana",
 
 
@@ -66,7 +66,7 @@ const galPorMunicipio = {
   "Saro": "Valles Pasiegos",
   "Villafufre": "Valles Pasiegos",
   "Santa Maria de Cayon": "Valles Pasiegos",
-  "Castañeda": "Valles Pasiegos",
+  "Castaneda": "Valles Pasiegos",
   "Corvera de Toranzo": "Valles Pasiegos",
   "Santiurde de Toranzo": "Valles Pasiegos",
   "Luena": "Valles Pasiegos",
@@ -270,4 +270,5 @@ function showPopup(info, name) {
   popup.style.top = "10px";
   popup.classList.remove("hidden");
 }
+
 
