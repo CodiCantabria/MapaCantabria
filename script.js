@@ -14,10 +14,11 @@ const galPorMunicipio = {
   "Pesaguero": "Liébana",
   "Vega de Liebana": "Liébana",
   "Camaleño": "Liébana",
+  "Penarrubia": "Liébana",
+
 
   "Mancomunidad de Campoo-Cabuerniga": "Saja-Nansa",
   "Cabuerniga": "Saja-Nansa",
-  "Penarrubia": "Saja-Nansa",
   "Comillas": "Saja-Nansa",
   "Ruiloba": "Saja-Nansa",
   "Udias": "Saja-Nansa",
@@ -269,3 +270,4 @@ function showPopup(info, name) {
   popup.style.top = "10px";
   popup.classList.remove("hidden");
 }
+
